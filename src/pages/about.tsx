@@ -6,16 +6,14 @@ import ProTip from '../components/ProTip';
 import Link from '../components/Link';
 import Copyright from '../components/Copyright';
 
-export default function Index() {
+export default function About(): JSX.Element {
   return (
     <Container maxWidth="sm">
       <Box sx={{ my: 4 }}>
         <Typography variant="h4" component="h1" gutterBottom>
           Gatsby v5-beta example
         </Typography>
-        <Link to="/about" color="secondary">
-          Go to the about page
-        </Link>
+        <Link to="/">Go to the main page</Link>
         <ProTip />
         <Copyright />
       </Box>
