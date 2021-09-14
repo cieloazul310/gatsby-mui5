@@ -6,7 +6,7 @@ import ProTip from '../components/ProTip';
 import Link from '../components/Link';
 import Copyright from '../components/Copyright';
 
-export default function Index() {
+export default function Index(): JSX.Element {
   return (
     <Container maxWidth="sm">
       <Box sx={{ my: 4 }}>
