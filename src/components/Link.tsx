@@ -20,7 +20,7 @@ export type LinkProps = LinkPropsBase & GatsbyLinkComposedProps & Omit<MuiLinkPr
 
 function Link(props: LinkProps): JSX.Element {
   const {
-    color = 'secondary',
+    color,
     underline = 'hover',
     innerRef,
     naked,
