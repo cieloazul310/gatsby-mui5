@@ -1,22 +1,15 @@
 import * as React from 'react';
-import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-import ProTip from '../components/ProTip';
+import Layout from '../layout';
 import Link from '../components/Link';
-import Copyright from '../components/Copyright';
 
 export default function About(): JSX.Element {
   return (
-    <Container maxWidth="sm">
-      <Box sx={{ my: 4 }}>
-        <Typography variant="h4" component="h1" gutterBottom>
-          Gatsby v5-beta example
-        </Typography>
-        <Link to="/">Go to the main page</Link>
-        <ProTip />
-        <Copyright />
-      </Box>
-    </Container>
+    <Layout title="About">
+      <Typography variant="h4" component="h1" gutterBottom>
+        Gatsby v5-beta example
+      </Typography>
+      <Link to="/">Go to the main page</Link>
+    </Layout>
   );
 }
